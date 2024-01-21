@@ -9,7 +9,13 @@ interface HeaderProps {
 }
 
 export default function Header({ className }: Readonly<HeaderProps>) {
-  const usernames = ["paullee.dev", "Paul Lee", "enigma", "HillcrestEnigma", "Kyunghan Lee"];
+  const usernames = [
+    "paullee.dev",
+    "Paul Lee",
+    "enigma",
+    "HillcrestEnigma",
+    "Kyunghan Lee",
+  ];
   const [titleClicks, setTitleClicks] = useState(0);
 
   return (
