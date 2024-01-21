@@ -1,6 +1,8 @@
 import Image from "next/image";
 import urls from "@/data/urls";
 import A from "@/components/A";
+import Socials from "@/components/Social";
+
 
 export default function About() {
   return (
@@ -13,7 +15,7 @@ export default function About() {
           <p className="mb-3 block text-lg lg:text-nowrap">
             Software Engineering student @ UWaterloo, class of 2028
           </p>
-          <div className="mb-3 w-0 min-w-full text-justify">
+          <div className="mb-3 w-0 min-w-full">
             <p className="mb-3">
               I&apos;m currently looking for <b>Summer 2024</b> internships. You
               may be interested in looking at my{" "}
@@ -30,20 +32,26 @@ export default function About() {
               placed <b>3rd out of 7794 teams</b> with team Parity in the 2022
               picoCTF competition.
             </p>
-            <p className="mb-3">
+            <p className="mb-8">
               If you would like to get in touch for any reason, please email me
               at <A email={urls.email} />.
             </p>
+            <div className="inline md:hidden">
+              <Socials />
+            </div>
           </div>
         </div>
       </div>
-      <Image
-        src="/img/hs640.jpg"
-        width={192}
-        height={192}
-        className="mb-3 ml-auto mt-3 hidden aspect-square h-48 w-48 flex-none rounded-lg md:inline"
-        alt="A headshot of Paul Lee"
-      />
+      <div className="ml-auto mt-3 hidden flex-none md:inline">
+        <Image
+          src="/img/hs640.jpg"
+          width={192}
+          height={192}
+          className="mb-3 aspect-square h-48 w-48 rounded-lg"
+          alt="A headshot of Paul Lee"
+        />
+        <Socials />
+      </div>
     </div>
   );
 }
