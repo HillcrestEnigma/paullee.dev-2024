@@ -17,7 +17,7 @@ function Social({ icon, href, className }: SocialProps) {
         icon={icon}
         className={
           className +
-          " scale-150 text-stone-600 hover:text-stone-950 md:scale-100"
+          " scale-150 text-stone-600 hover:text-stone-950 md:scale-100 dark:text-zinc-400 dark:hover:text-zinc-50"
         }
       />
     </a>

@@ -20,7 +20,7 @@ export default function Header({ className }: Readonly<HeaderProps>) {
 
   return (
     <div className={className}>
-      <header className="mb-13 flex h-14 items-center border-b border-black">
+      <header className="mb-13 flex h-14 items-center border-b border-black dark:border-slate-100">
         <button
           onClick={() => setTitleClicks(titleClicks + 1)}
           className="mr-3 flex-initial text-xl font-medium subpixel-antialiased"

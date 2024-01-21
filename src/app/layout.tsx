@@ -22,7 +22,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={
-          inter.className + "bg-gradient-to-r from-orange-50 to-amber-50"
+          inter.className + "bg-slate-100 dark:bg-slate-700 dark:text-slate-100"
         }
       >
         <div className="flex justify-center">
