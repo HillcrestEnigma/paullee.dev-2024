@@ -29,8 +29,8 @@ export default function About() {
             <p className="mb-3">
               I also have an active interest in cybersecurity, specifically in
               the areas of Web Security and Linux Hardening. I am proud to have
-              placed <b>3rd out of 7794 teams</b> with team Parity in the 2022
-              picoCTF competition.
+              placed <b>3rd out of 7794 teams</b> with team Parity in the 2022{" "}
+              <A href="https://picoctf.org/">picoCTF</A> competition.
             </p>
             <p className="mb-8">
               If you would like to get in touch for any reason, please email me
