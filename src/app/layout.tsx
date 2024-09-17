@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
+import { Suspense } from "react";
 
 config.autoAddCss = false;
 const inter = Inter({ subsets: ["latin"] });
@@ -27,8 +28,10 @@ export default function RootLayout({
       >
         <div className="flex justify-center">
           <div className="inline-block px-8 pb-8 pt-2">
-            <Header className="" />
-            <main className="mt-4">{children}</main>
+            <Suspense>
+              <Header className="" />
+              <main className="mt-4">{children}</main>
+            </Suspense>
           </div>
         </div>
       </body>
