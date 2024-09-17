@@ -2,13 +2,15 @@
 
 import { useState } from "react";
 import A from "@/components/A";
-import urls from "@/data/urls";
+import { useUrls } from "@/hooks/url";
 
 interface HeaderProps {
   className?: string;
 }
 
 export default function Header({ className }: Readonly<HeaderProps>) {
+  const urls = useUrls();
+
   const usernames = [
     "paullee.dev",
     "Paul Lee",

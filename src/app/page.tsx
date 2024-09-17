@@ -1,10 +1,13 @@
+"use client";
+
 import Image from "next/image";
-import urls from "@/data/urls";
+import { useUrls } from "@/hooks/url";
 import A from "@/components/A";
 import Socials from "@/components/Social";
 
-
 export default function About() {
+  const urls = useUrls();
+
   return (
     <div className="flex gap-8">
       <div className="flex-initial">
@@ -17,7 +20,7 @@ export default function About() {
           </p>
           <div className="mb-3 w-0 min-w-full">
             <p className="mb-3">
-              I&apos;m currently looking for <b>Summer 2024</b> internships. You
+              I&apos;m currently looking for <b>Winter 2025</b> internships. You
               may be interested in looking at my{" "}
               <A href={urls.resume}>résumé</A>.
             </p>

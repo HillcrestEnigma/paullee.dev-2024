@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { IconDefinition } from "@fortawesome/fontawesome-svg-core";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import urls from "@/data/urls";
+import { useUrls } from "@/hooks/url";
 
 interface SocialProps {
   icon: IconDefinition;
@@ -25,6 +25,8 @@ function Social({ icon, href, className }: SocialProps) {
 }
 
 export default function Socials() {
+  const urls = useUrls();
+
   return (
     <div className="flex justify-center gap-5 md:gap-2">
       <Social
