@@ -2,7 +2,7 @@
 
 import { useSearchParams } from "next/navigation";
 
-const resumeVersion = "2024-09-17";
+const resumeVersion = "2024-10-01";
 const allowedResumeIds = [
   "default",
   "waterloo",
