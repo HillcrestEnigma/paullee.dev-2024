@@ -23,7 +23,7 @@ function Social({ href, className, children }: PropsWithChildren<SocialProps>) {
     <a
       href={href}
       className={
-        className +
+        (className ?? "") +
         " flex-none scale-150 text-stone-600 hover:text-stone-950 md:scale-100 dark:text-zinc-400 dark:hover:text-zinc-50"
       }
     >
@@ -58,7 +58,7 @@ export default function Socials() {
       <SocialIcon icon={faLinkedin} href={urls.linkedin} />
       {/* <Social href={urls.se_webring} className="-ml-2 md:-ml-0.5"> */}
       <Social href={urls.se_webring}>
-        <SEWebring className="inline-block h-[0.9em] align-[-.05em] scale-90 -ml-0.5" />
+        <SEWebring />
       </Social>
     </div>
   );

@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Anchor from "@/components/Anchor";
 import { useUrls } from "@/hooks/url";
-import { names } from "@/data.json"
+import data from "@/data.json"
 
 interface HeaderProps {
   className?: string;
@@ -21,7 +21,7 @@ export default function Header({ className }: Readonly<HeaderProps>) {
           onClick={() => setTitleClicks(titleClicks + 1)}
           className="mr-3 flex-initial text-xl font-medium subpixel-antialiased"
         >
-          {names[titleClicks % names.length]}
+          {data.names[titleClicks % data.names.length]}
         </button>
         <Anchor
           href={urls.resume}
