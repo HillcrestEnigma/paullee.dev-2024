@@ -1,8 +1,9 @@
 "use client";
 
 import { useState } from "react";
-import A from "@/components/A";
+import Anchor from "@/components/Anchor";
 import { useUrls } from "@/hooks/url";
+import { names } from "@/data.json"
 
 interface HeaderProps {
   className?: string;
@@ -11,13 +12,6 @@ interface HeaderProps {
 export default function Header({ className }: Readonly<HeaderProps>) {
   const urls = useUrls();
 
-  const usernames = [
-    "paullee.dev",
-    "Paul Lee",
-    "enigma",
-    "HillcrestEnigma",
-    "Kyunghan Lee",
-  ];
   const [titleClicks, setTitleClicks] = useState(0);
 
   return (
@@ -27,14 +21,14 @@ export default function Header({ className }: Readonly<HeaderProps>) {
           onClick={() => setTitleClicks(titleClicks + 1)}
           className="mr-3 flex-initial text-xl font-medium subpixel-antialiased"
         >
-          {usernames[titleClicks % usernames.length]}
+          {names[titleClicks % names.length]}
         </button>
-        <A
+        <Anchor
           href={urls.resume}
           className="font-regular ml-auto flex-initial text-base"
         >
           résumé
-        </A>
+        </Anchor>
       </header>
     </div>
   );

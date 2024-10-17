@@ -1,0 +1,43 @@
+{
+  "names": [
+    "paullee.dev",
+    "Paul Lee",
+    "enigma",
+    "HillcrestEnigma",
+    "Kyunghan Lee"
+  ],
+  "headshots": [
+    "/img/hs-1_640.jpg",
+    "/img/hs-2_640.jpg",
+    "/img/pfp_300.png"
+  ],
+  "job": {
+    "term": {
+      "name": "Fall 2025",
+      "description": "Approx. September 3rd - December 20th"
+    },
+    "resume": {
+      "version": "2024-10-01",
+      "id": {
+        "default": "default",
+        "allowed": [
+          "default",
+          "waterloo",
+          "waterloo-py",
+          "waterloo-js",
+          "waterloo-ccpp",
+          "waterloo-devops"
+        ]
+      }
+    }
+  },
+  "urls": {
+    "email": "contact@paullee.dev",
+    "github": "https://github.com/HillcrestEnigma",
+    "linkedin": "https://www.linkedin.com/in/paul-lee-dev/",
+    "se_webring": "https://se-webring.xyz/"
+  },
+  "cdn": {
+    "baseURL": "https://cdn.paullee.dev"
+  }
+}

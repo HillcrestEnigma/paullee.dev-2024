@@ -1,28 +1,28 @@
-interface APropsBase {
+interface AnchorPropsBase {
   href?: string;
   email?: string;
   className?: string;
   children?: React.ReactNode;
 }
 
-interface APropHRef extends APropsBase {
+interface AnchorPropHRef extends AnchorPropsBase {
   href: string;
   email?: never;
 }
 
-interface APropEmail extends APropsBase {
+interface AnchorPropEmail extends AnchorPropsBase {
   href?: never;
   email: string;
 }
 
-type AProps = APropHRef | APropEmail;
+type AnchorProps = AnchorPropHRef | AnchorPropEmail;
 
-export default function A({
+export default function Anchor({
   href,
   email,
   className,
   children,
-}: Readonly<AProps>) {
+}: Readonly<AnchorProps>) {
   return (
     <a
       href={email ? "mailto:" + email : href}
