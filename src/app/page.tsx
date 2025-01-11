@@ -21,7 +21,7 @@ export default function About() {
             Hey, I&apos;m Paul! 👋
           </p>
           <p className="mb-3 block text-lg lg:text-nowrap">
-            Software Engineering student @ UWaterloo, class of 2028
+            Software Engineering student @ UWaterloo, Class of 2028
           </p>
           <div className="mb-3 w-0 min-w-full">
             <div className="mb-3">
