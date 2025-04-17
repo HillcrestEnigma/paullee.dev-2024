@@ -17,11 +17,12 @@
       "description": "Approx. September 3rd - December 20th"
     },
     "resume": {
-      "version": "2025-01-11",
+      "version": "2025-04-16-2",
       "id": {
         "default": "default",
         "allowed": [
           "default",
+          "security",
           "waterloo",
           "waterloo-py",
           "waterloo-js",
