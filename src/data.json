@@ -13,17 +13,22 @@
   ],
   "job": {
     "term": {
-      "name": "Fall 2025",
-      "description": "Approx. September 3rd - December 20th"
+      "name": "Summer 2026",
+      "description": "Approx. May 11th - August 21st"
     },
     "resume": {
-      "version": "2025-05-12-2",
+      "version": "2025-09-27",
       "id": {
         "default": "default",
         "allowed": [
           "default",
           "security",
+          "py",
+          "js",
+          "ccpp",
+          "devops",
           "waterloo",
+          "waterloo-security",
           "waterloo-py",
           "waterloo-js",
           "waterloo-ccpp",
